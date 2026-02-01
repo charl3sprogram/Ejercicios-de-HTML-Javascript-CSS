@@ -1,0 +1,87 @@
+body{
+    margin: 0;  
+    font-family: sans-serif;  
+    color: #fff;
+    background:#000c;
+}
+
+form{
+   /*  position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0; */
+    background-color: #222;
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 55px #eee2 ;
+    margin-top: 50px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+.form_input {
+    padding: 6px 20px; 
+}
+
+input, textarea, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: none;
+    border: 1px solid #666;
+    box-shadow: 0px 0px 15px #0003;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #fff;
+}
+
+option{
+    background-color: #222;
+}
+
+textarea{
+    min-width: 100%;
+    resize: none;
+    min-height: 102px;
+    font-family: sans-serif;
+    font-size: 13px;
+    /* no se por qué razon debo indicarle tmbn el size en mi pc y navegador firefox
+
+    /*form-sizing: content; 
+   **OJO** aun no funciona esta caracteristica*/
+}
+
+label{
+    font-size: 0.9em;
+    line-height: 2;
+}
+
+.checkbox{
+    width: auto;
+    height: 12px;
+}
+
+fieldset{
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 15px 6px 25px 6px;
+    margin: 25px;
+}
+
+legend{
+    padding: 0 6px;
+    color: #fff;
+}

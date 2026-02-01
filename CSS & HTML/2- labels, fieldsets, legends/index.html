@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="OG: title" content="el titulo">
+
+    <title> Labels </title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form>
+        <h2> 
+            Contact formulary 
+        </h2>
+
+        <fieldset>
+            <legend> BASIC INFORMATION</legend>           
+            <!-- SIMPLE INPUTS-->           
+            <div class="form_input">
+                <label for="name"> Full name </label>
+                <input type="text" placeholder="Charles Burtowski" id="name">
+            </div>
+
+            <div class="form_input">
+                <!-- si se pone el input adentro del label tambien funciona el foco como con el for y el id-->
+                <label for="email"> Email </label>
+                <input type="email" placeholder="ejemplo@gmail.com" id="email">
+            </div>  
+            
+            <div class="form_input">
+                <label for="phone_number"> Phone number </label>
+                <input type="text" placeholder="+5356768798" id="phone_number">
+            </div>           
+        </fieldset>
+
+        <!-- S & OPTION-->
+        <div class="form_input">
+            <label>Type of user
+                <select name="type-of-user">
+                    <option value="user1"> Master </option>
+                    <option value="user2"> Company </option>
+                    <option value="user3"> Others </option>
+                </select>
+            </label>
+        </div>
+        
+        <!-- DATALIST & OPTION-->
+        <div class="form_input">
+            <label>Referente
+                <input list="referente" name="referente">
+                <datalist id="referente" name="type-of-user">
+                    <option value="Carlitos Puyalena"> El guitarrista mostro de todo esto aquí </option>
+                    <option value="Pedrito"> El tocador de bongós </option>
+                    <option value="Pablitín"> Tocador de bajos </option>
+                </datalist>
+            </label>
+        </div>
+
+
+        <!-- TEXTAREA-->
+        <div class="form_input">
+            <label for="description"> Here you put your description </label>
+<!-- para textarea:
+*readonly atributo, solo se puede leer
+            
+*disabled, para desactivar la opcion de enfocar, y no se envia al formulario
+            
+*maxlength= "140", significa que solo se pueden escribir hasta 140 caracteres
+            
+*wraph
+            
+*rows.. cantidad de lineas que permitimos escribir a partir de que empiece el scroll--> 
+            <textarea rows="10" placeholder="Deja tu mensaje..." id="description"></textarea>
+        </div>  
+
+        <div class="form_input">
+            <label>Acepto términos y condiciones
+               <input type="checkbox"  class="checkbox">
+            </label>
+        </div>  
+
+    </form>
+</body>
+</html>
