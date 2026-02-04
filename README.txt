@@ -1,0 +1,1 @@
+El objetivo de este pequeño repo es mostrar algunos de los ejericios que he realizado y para demostrar el transcurso de mi aprendizaje con Javascript, HTML, y CSS
